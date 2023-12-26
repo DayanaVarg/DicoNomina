@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+:root {
+	--header-height: 3.5rem;
+	--nav-width: 219px;
+	/*Colores*/
+	--first-color: #155694;
+	--first-color-light: #cecdcd;
+	--title-color: #19181b;
+	--text-color: #020202;
+	--text-color-light: #0e4375;
+	--body-color: #dfdbdf;
+	--container-color: #faf9f9;
+	--header-color: #c26c75;
+	/*fonts*/
+	--body-font: "Poppins", sans-serif;
+	--normal-font-size: 0.998rem;
+	--small-font-size: 0.95rem;
+	--smaller-font-size: 0.85rem;
+	--font-medium: 500;
+	--font-semi-bold: 600;
+	--z-fixed: 100;
+}
+
+
+
+/* Contenido */
+
+.container{
+	margin-top: 5%;
+}
+
+/* alerta */
+.alert-success,
+.alert-danger{
+	margin-bottom: -20px;
+}
+
+
+	/*Boton agregar*/
+.espacioB{
+	margin-top: 3%;
+	margin-right: 140px;
+	float: right;
+	position: relative;
+}
+.buttonAg{
+	font-size: 13px;
+	position: absolute;
+	border: none;
+	border-radius: 7px;
+	height: 40px;
+	width: 80px;
+	background-color: #8f99a1;
+	color: #ffffff;
+}
+
+/*contenedor*/
+.container{
+	margin-top: 5%;
+}
+/*Tabla*/
+
+
+/*titulo*/
+
+.titulo{
+	margin-left: 50px;
+	margin-top: 18px;
+	position: absolute;
+	font-size: 26px;
+	font-weight: 1000;
+	letter-spacing: 5px;
+	align-items: center;
+	color: #393b39;
+}
+
+/*buscar de tablas*/
+.dataTable-top,
+.dataTable-bottom{
+	padding:20px 10px;
+}
+
+/*texto izquierda*/
+.dataTable-top > div:first-child{
+	font-size: 10px;
+	float: right;
+	margin-right: 20px;
+
+}
+.dataTable-bottom > div:first-child{
+	font-size: 10px;
+
+}
+
+/*POSICION BUSCAR*/
+.dataTable-top > div:last-child,
+.dataTable-bottom > div:last-child{
+	line-height: 28px;
+	float: right;
+	margin-right: 190px;
+}
+
+/*Selector*/
+.dataTable-selector{
+	padding:6px;
+	border-radius: 10px;
+	width: 160px;
+	border: 1px solid rgb(197, 195, 195);
+}
+.dataTable-selector:focus{
+	border-color: #66a1d3;
+	background-color: #fff;
+	box-shadow: 0 0 0 6px rgba(67, 120, 219, 0.2);
+
+}
+/*casilla buscar*/
+.dataTable-input{
+	font-size: 12px;
+	min-width: 170%;
+	height: 30px;
+	line-height: 28px;
+	padding-left: 2.5rem;
+	border-radius: 20px;
+	border: 1px solid rgb(197, 195, 195);
+	color: #0d0c22;
+	transition: .3s ease;
+
+}
+.dataTable-input::placeholder {
+	color: #9e9ea7;
+}
+
+.dataTable-input:focus, .dataTable-input:hover {
+	outline: none;
+	border-color:#66a1d3;
+	background-color: #fff;
+	box-shadow: 0 0 0 6px rgba(67, 120, 219, 0.2);
+}
+
+/*parte de abajo*/
+.dataTable-info{
+	margin:2px 0;
+
+}
+
+.dataTable-sorter::before{
+	border-top:4px solid #000;
+	bottom:2px
+}
+
+.dataTable-sorter::after{
+	border-bottom:4px solid #000;
+	border-top:4px solid transparent;
+	top:-2px
+}
+
+.asc .dataTable-sorter::after,
+.desc .dataTable-sorter::before{
+	opacity:.6
+}
+
+
+.dataTable-top::after,
+.dataTable-bottom::after{
+	clear:both;
+	content:" ";
+	display:table
+}
+
+
+table.miyazaki {
+	border-bottom-left-radius: 10px;
+	display: block;
+	max-height: 380px;
+	max-width:100%;
+	color: #ffffff;
+	overflow-y: scroll;
+	overflow-x: scroll;
+}
+
+
+table.miyazaki::-webkit-scrollbar{
+	width: 7px;
+	position: absolute;
+}
+table.miyazaki::-webkit-scrollbar-thumb{
+	background: #a7a7a7;
+	border-radius: 50px;
+}
+
+table.miyazaki caption {
+	font-size: 2rem;
+	color: #fff;
+	margin: 10px;
+	background-position: center left, center right;
+}
+
+table.miyazaki thead th {
+	text-align: center;
+	letter-spacing: 2px;
+	font-weight: 800;
+	background: #d78b8b;
+	font-size: 12px;
+	padding: 8px 15px 7px 10px ;
+}
+
+table.miyazaki thead {
+	border-top-left-radius: 10px;
+}
+
+table.miyazaki tbody td {
+	padding-top: 15px;
+	align-items: baseline;
+	text-align: center;
+	font-size: 13px;
+	font-weight: 500;
+	color: #0a0808;
+	background: #fff;
+	border: 1px solid rgb(249, 244, 244);
+}
+
+
+/*button*/
+
+table.miyazaki tbody td .button1{
+	margin-top: -10px;
+	font-size: 11px;
+	position: relative;
+	padding: 10px 13px 10px 13px;
+	border: none;
+	background: #8f99a1;
+	box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+	border-radius: 2rem;
+}
+
+.button1:active {
+	transform: scale(0.95);
+}
+
+.button1 span {
+	font-weight: 500;
+	color: #ffffff;
+	font-size: 9px;
+	letter-spacing: 2px;
+}
+
+table.miyazaki tbody td .button3{
+	background: #CC0000;
+}
+
+/* Boton empelados inactivos*/
+.espacioI{
+	margin-top: -5%;
+	margin-right: 170px;
+	float: right;
+	position: relative;
+}
+.buttonI{
+	position: absolute;
+	height: 40px;
+	width: 160px;
+	padding: 5px 8px 5px 8px;
+	border: none;
+	background: #8f99a1;
+	box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+	border-radius: 2rem;
+}
+
+.buttonI span{
+	font-weight: 500;
+	color: #ffffff;
+	font-size: 9px;
+	letter-spacing: 2px;
+}
+
+/*------------------- REGISTRAR EMPELADO ------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+.containerE{
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+
+}
+
+.botonespace{
+	position: absolute;
+	left: 23%;
+	bottom: 75%;
+
+}
+
+.Btn {
+	color: #ffffff;
+	width: 80px;
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+	background: #d79fa4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition-duration: .3s;
+	overflow: hidden;
+	font-size: 15px;
+}
+
+.Btn:hover {
+	background-color: #d76772;
+}
+
+
+.Btn:active {
+	transform: scale(0.95);
+	transition-duration: .3s;
+}
+
+.form{
+	height: 70%;
+	margin-top: 10px;
+	margin-left: 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	max-width: 550px;
+	padding: 25px;
+	border-radius: 20px;
+	position: absolute;
+	background: linear-gradient(0deg, rgb(238, 238, 238) 0%, rgb(244, 250, 255) 100%);
+	border: 5px solid rgb(252, 248, 248);
+	box-shadow: rgba(220, 144, 151, 0.78) 0px 30px 30px -20px;
+}
+
+.titule{
+	margin-left: 26%;
+	padding-bottom: 7px;
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	position: relative;
+	display: flex;
+	color: #c26c75;
+}
+
+.flex {
+	display: flex;
+	width: 100%;
+	gap: 6px;
+
+}
+
+.form label {
+	position: relative;
+}
+
+.form label .input {
+	height: 50px;
+	background: rgb(255, 255, 255);
+	width: 100%;
+	padding: 20px 05px 05px 10px;
+	border-radius: 10px;
+	border: 0.1px solid rgba(223, 222, 222, 0.397);
+	box-shadow: #c26c75 0px 5px 10px -5px;
+}
+
+.form label .input1 {
+	width: 215px;
+}
+
+.form label .input+span {
+	font-weight: 500;
+	color: #6b6b6b;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	font-size: 10px;
+	cursor: text;
+	transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown+span {
+	top: 12.5px;
+	font-size: 8px;
+}
+
+.form label .input:focus+span,
+.form label .input:valid+span,
+.form label .input:read-only+span
+{
+	color: #c26c75;
+	top: 0;
+	font-size:12px;
+	font-weight: 600;
+}
+
+.form .input:focus {
+	outline: none;
+	border-inline: 3px solid #c26c75;
+}
+
+.input {
+	font-size:medium;
+}
+
+
+.form label .inputE {
+	height: 50px;
+	background: rgb(255, 255, 255);
+	width: 100%;
+	padding: 20px 05px 05px 10px;
+	border-radius: 10px;
+	border: 0.1px solid rgba(223, 222, 222, 0.397);
+	box-shadow: #c26c75 0px 5px 10px -5px;
+}
+
+.form label .inputE+span {
+	color: #c26c75;
+	top: 0;
+	font-size:12px;
+	font-weight: 600;
+	position: absolute;
+	left: 10px;
+	cursor: text;
+	transition: 0.3s ease;
+}
+
+.form .inputE:focus {
+	outline: none;
+	border-inline: 3px solid #c26c75;
+}
+
+
+.submit {
+	font-size: 15px;
+	letter-spacing: 0.3rem;
+	display: block;
+	width: 70%;
+	font-weight: lighter;
+	background: #c26c75;
+	color: white;
+	padding-block: 8px;
+	margin: 15px auto;
+	border-radius: 10px;
+	box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 20px 10px -15px;
+	border: none;
+}
+
+.submit:hover {
+	transform: scale(1.06);
+	box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 23px 10px -20px;
+}
+
+
+/* ------------------- Vista Nomina ----------------*/
+
+
+.tituloN{
+	margin-left: 5px;
+	font-size: 20px;
+}
+
+.espacioA{
+	margin-top: 3%;
+	margin-left: 70px;
+	float: left;
+	position: relative;
+}
+.buttonAt{
+	font-size: 13px;
+	position: absolute;
+	border: none;
+	border-radius: 7px;
+	height: 40px;
+	width: 80px;
+	background-color: #d5777f;
+	color: #ffffff;
+}
+
+/*---------------------- Registro nómina -------------------*/
+.form1{
+	min-width: 450px;
+	height: 60%;
+}
+
+
+
+
+
+
